@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --color-green: hsla(139, 59%, 55%, 1);
+    --color-green-dark: hsla(140, 59%, 35%, 1);
+    --color-gray-font: rgb(155, 157, 168);
+    --color-gray-div: hsla(228, 12%, 40%, 1);
+    --color-gray-div-dark: hsla(227, 12%, 30%, 1);
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image:  linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    margin-top: 0px;
+}
+div.left-head {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color: var(--color-gray-font);
+}
+.logo {
+    width: 60px;
+}
+div.left-head-part2 {
+    display: flex;
+    flex-direction: column;
+}
+div.left-top-head {
+    display: flex;
+    align-items: center;
+}
+div.left-top-head > p {
+    font-size: 11pt;
+}
+a.link {
+    color: var(--color-gray-font);
+    text-decoration: none;
+}
+a.link:hover {
+    color: #fff;
+    transition: 0.2s;
+}
+div.left-top-follow-button {
+    margin-left: 5px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: hsla(139, 59%, 55%, 1);
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding-right: 5px;
+    padding-left: 4px;
+}
+div.left-top-follow-button:hover {
+    color: white;
+    background-color: hsla(140, 59%, 35%, 1);
+}
+span#plus {
+    display: flex;
+    align-items: center;
+    font-size: 15pt;
+}
+h1.h1 {
+    display: flex;
+    margin-bottom: 10px;
+    height: 22px;
+}
+a.link-2 {
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+nav.right-nav {
+    color: white;
+    display: flex;
+}
+nav.right-nav > div {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    background-color: var(--color-gray-div-dark);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+nav.right-nav > div:hover {
+    background-color: var(--color-gray-div);
+}
+div#sign-up {
+    color: black;
+    background-color: var(--color-green);
+}
+div#sign-up:hover {
+    color: white;
+    background-color: var(--color-green-dark);
+}
+
+main {
+    color: white;
+}
+div.main-content {
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-darkblue-alpha);
+}
+div.main-content > div {
+    margin-bottom: 30px;
+}
+input, select, textarea, option {
+    font-family: 'Poppins';
+    color: rgb(149, 149, 149);
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
