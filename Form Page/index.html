@@ -13,7 +13,7 @@
             <div class="logo">
                 <a href=""><img class="logo" src="images/codepen.png" alt=""></a>
             </div>
-            <div class="left-head-part2">
+            <div class="    ">
                 <div class="left-top-head">
                     <p>A Pen by <a class="link" href="https://codepen.io/freeCodeCamp">freeCodeCamp.org</a></p>
                     <div class="left-top-follow-button">
@@ -32,6 +32,11 @@
                     favorite
                 </span>
             </div>
+            <div class="edit">
+                <span id="edit" class="material-symbols-outlined">
+                    Edit
+                </span>
+            </div>
             <div class="source-code">View Source Code</div>
             <div id="sign-up" class="sign-up" >Sign Up</div>
             <div class="log-in">Log In</div>
@@ -43,21 +48,21 @@
             <p>Thank you for taking time to help us improve the platform</p>
         </div>
         <div class="main-content">
-            <div class="name">
-                <label for="name">Name</label><br>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required autocomplete="name">
+            <div class="content">
+                <label for="iname">Name</label><br>
+                <input type="text" name="name" id="iname" placeholder="Enter your name" required autocomplete="name">
             </div>
-            <div class="email">
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="email">
+            <div class="content">
+                <label for="iemail">Email</label><br>
+                <input type="email" name="email" id="iemail" placeholder="Enter your email" required autocomplete="email">
             </div>
-            <div class="age">
-                <label for="age">Age (optional)</label><br>
-                <input type="number" name="age" id="age" placeholder="Age">
+            <div class="content">
+                <label for="iage">Age <small>(option)</small></label><br>
+                <input type="number" name="age" id="iage" placeholder="Age" min="1" max="150">
             </div>
-            <div class="corrent-role">
+            <div class="content">
                 <label for="role">Which option best describes your current role?</label><br>
-                <select name="role" id="role">
+                <select name="role" id="role" required>
                     <option value="" disabled selected>Select your current role</option>
                     <option value="student">Student</option>
                     <option value="full-time-job">Full Time Job</option>
@@ -67,21 +72,27 @@
                     
                 </select>
             </div>
-            <div class="recommendation">
+            <div class="content">
                 <label for="#">Would you recommend freeCodeCamp to a friend?</label><br>
 
-                <input type="radio" name="reco" id="def">
-                <label for="def">Definitely</label><br>
+                <div class="recomm">
+                    <input type="radio" name="reco" id="def" class="radio" checked>
+                    <label class="rad" for="def">Definitely</label><br>
+                </div>
 
-                <input type="radio" name="reco" id="may">
-                <label for="may">Maybe</label><br>
+                <div class="recomm">
+                    <input type="radio" name="reco" id="may" class="radio">
+                    <label class="rad" for="may">Maybe</label><br>
+                </div>
 
-                <input type="radio" name="reco" id="not">
-                <label for="not">Not Sure</label>
+                <div class="recomm">
+                    <input type="radio" name="reco" id="not" class="radio">
+                    <label class="rad" for="not">Not Sure</label>
+                </div>
             </div>
-            <div class="favorite-feature">
+            <div class="content">
                 <label for="favorite">What is your favorite feature of freeCodeCamp?</label><br>
-                <select name="favorite" id="favorite">
+                <select name="favorite" id="favorite" required>
                     <option value="" disabled selected>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
@@ -89,49 +100,71 @@
                     <option value="open-source">Open Source</option>
                 </select>
             </div>
-            <div class="improves">
-                <label for="improves">What would you like to see improved?</label><br>
+            <div class="content">
+                <label for="improves">What would you like to see improved? <small>(Check all that apply)</small></label><br>
 
-                <input type="checkbox" name="front" id="front">
-                <label for="frony">Front-end Projects</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="front" id="front">
+                    <label for="front">Front-end Projects</label><br>
+                </div>
 
-                <input type="checkbox" name="back" id="back">
-                <label for="back">Back-end Projects</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="back" id="back">
+                    <label for="back">Back-end Projects</label><br>
+                </div>
 
-                <input type="checkbox" name="data" id="data">
-                <label for="data">Data Visualization</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="data" id="data">
+                    <label for="data">Data Visualization</label><br>
+                </div>
 
-                <input type="checkbox" name="challenge" id="challenge">
-                <label for="challenge">Challenges</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="challenge" id="challenge">
+                    <label for="challenge">Challenges</label><br>
+                </div>
 
-                <input type="checkbox" name="os-community" id="os-community">
-                <label for="os-community">Open Source Community</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="os-community" id="os-community">
+                    <label for="os-community">Open Source Community</label><br>
+                </div>
 
-                <input type="checkbox" name="gitter-hr" id="gitter-hr">
-                <label for="gitter-hr">Gitter help rooms</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="gitter-hr" id="gitter-hr">
+                    <label for="gitter-hr">Gitter help rooms</label><br>
+                </div>
 
-                <input type="checkbox" name="videos" id="videos">
-                <label for="videos">Videos</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="videos" id="videos">
+                    <label for="videos">Videos</label><br>
+                </div>
 
-                <input type="checkbox" name="city-met" id="city-met">
-                <label for="city-met">City Meetups</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="city-met" id="city-met">
+                    <label for="city-met">City Meetups</label><br>
+                </div>
 
-                <input type="checkbox" name="wiki" id="wiki">
-                <label for="wiki">Wiki</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="wiki" id="wiki">
+                    <label for="wiki">Wiki</label><br>
+                </div>
 
-                <input type="checkbox" name="forum" id="forum">
-                <label for="forum">Forum</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="forum" id="forum">
+                    <label for="forum">Forum</label><br>
+                </div>
 
-                <input type="checkbox" name="add-courses" id="add-courses">
-                <label for="add-courses">Additional Courses</label><br>
+                <div class="check">
+                    <input class="checkbox" type="checkbox" name="add-courses" id="add-courses">
+                    <label for="add-courses">Additional Courses</label><br>
+                </div>
 
             </div>
             <div class="comment-and-suggestions">
-                <label for=""></label><br>
-                <textarea name="comment-and-suggestions" id="comment-and-suggestions" cols="100" rows="5"></textarea>
+                <label for="">Any comments or suggestions?</label><br>
+                <textarea name="comment-and-suggestions" id="comment-and-suggestions" cols="100" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
             <div class="submit">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submit">
             </div>
         </div>
     </main>
