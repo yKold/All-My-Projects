@@ -82,3 +82,64 @@ div.container > a:hover {
 
     transform: scale(1.1);
 }
+
+.myName2 {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .myName {
+        display: none;
+    }
+    .myName2 {
+        display: flex;
+    }
+}
+@media screen and (max-width: 445px) {
+    .myName {
+        display: none;
+    }
+    .myName2 {
+        display: flex;
+        font-size: 20pt;
+    }
+}
+@media screen and (max-width: 400px) {
+    .myName {
+        display: none;
+    }
+    .myName2 {
+        display: flex;
+        font-size: 16pt;
+    }
+    div.medias > a > img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    div.container > a {
+        width: 300px;
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .myName {
+        display: none;
+    }
+    .myName2 {
+        display: flex;
+        font-size: 16pt;
+    }
+    div.menu {
+        align-items: center;
+        justify-content: center;
+    }
+    div.medias > a > img{
+        display: none;
+    }
+    div.container > a {
+        width: 200px;
+        font-size: 13pt;
+    }
+}

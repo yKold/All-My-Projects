@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
-main {
+main, body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 div#nome {
@@ -25,6 +26,9 @@ div#nome {
     color: white;   
 }
 div#nome2 {
+    display: none;
+}
+div#nome3 {
     display: none;
 }
 
@@ -131,6 +135,9 @@ h3 {
     div#nome2 {
         display: none;
     }
+    div#nome3 {
+        display: none;
+    }
     .pergunta {
         width: 600px;
     }
@@ -140,6 +147,9 @@ h3 {
     div#nome {
         display: none;
     }
+    div#nome3 {
+        display: none;
+    }
     div#nome2 {
         display: flex;
         align-items: center;
@@ -152,36 +162,25 @@ h3 {
         box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.476);
         
         color: white;
-        
     }
-    .pergunta {
-        width: 400px;
-    }
-    .resposta {
+    .resposta, h3{
         width: 300px;
     }
-    .apresentação > p {
-        width: 400px;
-    }
-
-    #destilacao {
-        width: 400px;
-    }
     
-    #caldeira {
+    #caldeira, #fracoes, #destilacao, .apresentação > p, .pergunta{
         width: 400px;
     }
     
     #poluicao {
         width: 370px;
     }
-    
-    #fracoes {
-        width: 400px;
-    }
 }
+
 @media screen and (max-width: 490px){
     div#nome {
+        display: none;
+    }
+    div#nome3 {
         display: none;
     }
     div#nome2 {
@@ -199,29 +198,75 @@ h3 {
         
     }
 
-    .pergunta {
+    .pergunta, .apresentação > p, #destilacao {
         width: 400px;
     }
-    .resposta {
+    .resposta, h3 {
         width: 300px;
     }
-    .apresentação > p {
-        width: 400px;
-    }
-
-    #destilacao {
-        width: 400px;
-    }
     
-    #caldeira {
+    #caldeira, #fracoes {
         width: 300px;
     }
     
     #poluicao {
         width: 370px;
     }
+}
+
+@media screen and (max-width: 400px){
+    div#nome2 {
+        display: none;
+    }
+    div#nome3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border-radius: 0px 0px 5px 5px;
+        font-family: Poppins;
     
-    #fracoes {
+        background-color: rgb(17, 17, 17);
+        box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.476);
+        
+        color: white;
+    }
+    .pergunta, .apresentação > p, #destilacao {
+        width: 250px;
+    }
+    .resposta, h3 {
         width: 300px;
+    }
+    
+    #caldeira, #fracoes {
+        width: 200px;
+    }
+    
+    #poluicao {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        display: none;
+    }
+
+    .pergunta, .apresentação > p, #destilacao {
+        width: 150px;
+    }
+    .pergunta {
+        font-size: 20pt;
+    }
+    .resposta, h3 {
+        width: 200px;
+    }
+    
+    #caldeira, #fracoes {
+        width: 100px;
+    }
+    
+    #poluicao {
+        width: 270px;
     }
 }
