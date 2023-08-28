@@ -12,7 +12,7 @@
         <h1 class="myName2">GABRIEL SANTOS</h1>
         <div class="medias">
             <a href="https://www.instagram.com/gabriel_ykold/"><img src="images/Instagram_icon.png.webp" alt="instagram"></a>
-            <a href=""><img src="images/call.webp" alt="number"></a>
+            <a href="" id="numeroTelefone"  value="31-998717295"><img src="images/call.webp" alt="number"></a>
         </div>
     </div>
 
@@ -21,5 +21,20 @@
         <a href="Login Page Dark Theme/index.html">Login Page Dark Theme</a>
         <a href="Chemistry School Work/index.html">Chemistry School Work</a>
     </div>
+    <script>
+        const numeroTelefoneLink = document.getElementById('numeroTelefone');
+
+        numeroTelefoneLink.addEventListener('click', function() {
+        const numeroTelefone = '+5531998717295'; // Substitua pelo seu número de telefone
+
+        const textArea = document.createElement('textarea');
+        textArea.value = numeroTelefone;
+
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+    })
+    </script>
 </body>
 </html>
