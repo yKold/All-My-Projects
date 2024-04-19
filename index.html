@@ -25,7 +25,8 @@
         const numeroTelefoneLink = document.getElementById('numeroTelefone');
 
         numeroTelefoneLink.addEventListener('click', function() {
-        const numeroTelefone = '+5531998717295'; // Substitua pelo seu número de telefone
+        const numeroTelefone = '+5531998717295'; 
+        // Substitua pelo seu número de telefone
 
         const textArea = document.createElement('textarea');
         textArea.value = numeroTelefone;
@@ -34,6 +35,8 @@
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
+
+        window.alert("Você copiou o número para a área de tranferencia!\n+55 (31) 9 9871-7295")
     })
     </script>
 </body>
